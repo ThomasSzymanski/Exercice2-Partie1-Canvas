@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <title>Exercice 2 - Canvas</title>
+	  <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<canvas id="mon_canvas" width="400" height="400"> 
+  			Texte alternatif pour les navigateurs ne supportant pas Canvas.
+		</canvas>
+		<script type="text/javascript">
+  			var c = document.getElementById("mon_canvas");
+ 			var ctx = c.getContext("2d");
+
+			ctx.beginPath();
+			ctx.rotate(45 * Math.PI / 180);
+			ctx.fillStyle = "#d7823e";
+			ctx.fillRect(145,-138,177,177);
+
+			ctx.beginPath();
+			ctx.rotate(-45 * Math.PI / 180);  
+ 			ctx.fillStyle = "#a1d8e6";
+			ctx.fillRect(75,130,250,250);
+
+			ctx.beginPath();
+			ctx.fillStyle = "#c9c9c9";
+			ctx.fillRect(105,160,40,40);
+
+			ctx.beginPath();
+			ctx.fillStyle = "#c9c9c9";
+			ctx.fillRect(255,160,40,40);
+
+			ctx.beginPath();
+			ctx.fillStyle = "#c9c9c9";
+			ctx.fillRect(170,285,60,95);
+ 		</script>
+	</body>
+</html>
